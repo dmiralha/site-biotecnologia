@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicação de Artigos Científicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Publicações Científicas da Trilha de Biotecnologia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Artigos Recentes</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corpo Principal -->
+    <main>
+        <!-- Artigo Individual -->
+        <article class="artigo">
+            <h2>Condicionantes ideais para germinação de sementes de feijão: Impactos da temperatura e pH no planejamento agrícola</h2>
+            <p class="autor">Autor: João da Silva, Maria Oliveira</p>
+            <p class="resumo">Este artigo explora os efeitos da pesquisa do efeito do pH na germinação de feijão</p>
+
+            <section class="conteudo">
+                <h2>Introdução:</h2>
+                <p>A germinação de uma planta é altamente influenciável por 2 fatores ambientais, como a temperatura e o PH do solo, podendo determinar o êxito ou não, do desenvolvimento da planta, que tem sua importância econômica e nutricional para nossa região. Neste estudo, investigamos as condições ideais para a germinação das sementes de feijão (Phaseolus vulgaris), considerando a combinação dos 2 fatores citados, e as consequências de suas alterações, haja visto que as alterações climáticas, cada vez mais presente, tem impactado esse tipo de cultivo.</p>
+                <h2>Objetivo:</h2>
+                <p>Determinar como diferentes combinações de temperatura e PH afetam a taxa de germinação de sementes de feijão.</p>
+                <h2>Material e Métodos:</h2>
+                <p>Experimento conduzido no laboratório de fisiologia vegetal da Universidade XYZ. Utilizando um total de 150 sementes de Phaseolus vulgaris, divididas em três grupos de 50 sementes cada. Cada grupo foi submetido a diferentes faixas de temperatura (20°C, 25°C e 30°C), e dentro de cada grupo de temperatura, as sementes foram expostas a soluções com diferentes níveis de PH (5, 6, 7, 8 e 9). O período de observação foi de 14 dias. A cada 24 horas, verificou-se o número de sementes germinadas, observando protrusão de radícula, e a taxa de germinação foi calculada ao final do experimento.</p>
+                <h2>Resultados:</h2>
+                <p> O estudo sobre a germinação de sementes de feijão revelou que o pH neutro (pH 7) combinado com a temperatura de 25°C resultou na maior taxa de germinação, atingindo 90% (figura 1). Em contraste, pH extremos, como pH 5 (ácido) e pH 9 (alcalino), apresentaram taxas de germinação significativamente mais baixas, independentemente da temperatura. Além disso, embora a temperatura de 30°C tenha inicialmente promovido altas taxas de germinação, as sementes mostraram sinais de estresse térmico após o 10º dia de observação. Esses resultados ressaltam a importância de controlar o pH e a temperatura para otimizar a germinação e o crescimento das plantas de feijão.</p>
+
+                <!-- Imagens -->
+                <figure>
+                    <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQjBM4U5XWoaGPX9K0H4zYP4nOvZe-C0QnAnxGUxqB6AF6UgPicalvg6tY0GvutC3KT2XyO9vDGxgJI/pubchart?oid=2091838193&format=image" alt="Fig 1">
+                    <figcaption>Figura 1: DTaxa de germinação de sementes de feijão sob diferentes condições de PH e temperatura</figcaption>
+                </figure>
+
+                <h2>Conclusões:</h2>             
+                <p><b>Condições Ideais para Germinação:</b>
+                    <p>Melhor temperatura para germinação: 25°C.</p>
+                    <p>pH ideal: Neutro (pH 6-7).</p>
+                </p>
+                    <p><b>Importância das Informações:</b>
+                    <p>Valiosas para o planejamento agrícola.</p>
+                    Sugestão de práticas de correção de solo em regiões com solos excessivamente ácidos ou alcalinos.
+                </p>
+                    
+                    <p><b>Sugestões para Futuros Estudos:</b>
+                    <p>Investigar o impacto de outras variáveis, como:</p>
+                    <p>Salinidade do solo.</p>
+                    <p>Teor de nutrientes.</p>
+                    </p>
+            </section>
+
+            <!-- Curtir Artigo -->
+            <section class="curtir">
+                <button id="curtirBtn" onclick="curtir()">👍 Curtir</button>
+                <p id="curtidasCount">Curtidas: 0</p>
+            </section>
+
+            <!-- Comentários -->
+            <section class="comentarios">
+                <h3>Comentários</h3>
+                <div id="listaComentarios">
+                    <!-- Comentários anteriores serão listados aqui -->
+                </div>
+                <form id="comentarioForm" onsubmit="adicionarComentario(event)">
+                    <textarea id="comentarioTexto" placeholder="Deixe um comentário..." required></textarea>
+                    <button type="submit">Enviar Comentário</button>
+                </form>
+            </section>
+
+            <!-- Referências -->
+            <section class="referencias">
+                <h3>Referências</h3>
+                <ul>
+                    <li>Smith, J., & Jones, A. (2020). "The effect of soil pH on seed germination rates." Journal of Agricultural Sciences, 45(3), 221-230.</li>
+                    <li>Brown, R. (2019). "Temperature effects on early plant development." Plant Physiology Review, 32(2), 147-155.</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Publicação Científica. Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

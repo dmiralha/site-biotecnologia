@@ -1,0 +1,148 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #075c13;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+article h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-style: italic;
+    color: #333;
+}
+
+.referencias {
+    margin-top: 30px;
+}
+
+.referencias ul {
+    list-style: none;
+    padding: 0;
+}
+
+.referencias ul li {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #075c13;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Estilos para Curtidas e Comentários */
+.curtir {
+    margin-top: 20px;
+}
+
+#curtirBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#curtirBtn:hover {
+    background-color: #0056b3;
+}
+
+#curtidasCount {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.comentarios {
+    margin-top: 30px;
+}
+
+#comentarioForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#comentarioTexto {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#comentarioForm button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#comentarioForm button:hover {
+    background-color: #218838;
+}
+
+#listaComentarios {
+    margin-top: 20px;
+}
+
+.comentario {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
